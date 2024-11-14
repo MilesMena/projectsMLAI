@@ -7,7 +7,7 @@ def convert_txt_csv(fname: str) -> None:
     with open(fname, 'r') as f:
         stripped = (line.strip() for line in f)
         lines = (line.split(",") for line in stripped if line)
-        with open(f'{csv_fname}.csv', 'w') as out_file:
+        with open(f'{csv_fname}csv', 'w') as out_file:
             writer = csv.writer(out_file)
             #writer.writerow(('title', 'intro'))
             writer.writerows(lines)
