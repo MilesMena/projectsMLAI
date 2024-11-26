@@ -1,11 +1,9 @@
 import torch
 from torch.utils.data import Dataset
-import numpy as np
 import pandas as pd
 from PIL import Image,ImageDraw
 import os
 import ast
-
 
 class PlaneDataset(Dataset):
     """Plane Dataset"""
@@ -31,18 +29,6 @@ class PlaneDataset(Dataset):
             geometry = self.target_transform(geometry)
         return image, geometry
 
-
-    # def get_bbox(self):
-    #     return self.bbox
-    
-    # def save_image(self, image, images_dir):
-    #     image_path = os.path.join(images_dir, image)
-    #     # im = Pil
-
-    
-
 if __name__ == "__main__":
     dataset = PlaneDataset("data/planes_satellite/annotations.csv", "data/planes_satellite/images")
-    #print(type(dataset[0][1]))
     print(dataset[0])
-    #print(dataset.annotations.geometry)
