@@ -4,7 +4,9 @@
 
 # TODO:
 
-- How do SVMs work?
+- writeup on how linear regression works
+- Hwrite up on how do SVMs work
+- plane dataset
 
 # SVMs
 ```
