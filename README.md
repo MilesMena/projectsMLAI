@@ -2,7 +2,7 @@
 
 
 
-# TOD0:
+# TODO:
 
 - How do SVMs work?
 
