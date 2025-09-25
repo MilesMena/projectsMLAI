@@ -13,3 +13,7 @@ python3 prediction.py
 ```
 
 check plots
+
+# Data
+
+Data Sources: - Machine Learning Mastery - Wikipedia
